@@ -211,6 +211,7 @@ h1, h2, h3, h4, h5, h6 {
       padding: 10px 60px;
       /* background: #ffffff !important; */
       background: var(--color) !important;
+      
     }
   
   .navbar .navbar-brand {
@@ -941,7 +942,10 @@ section {
   text-align: center;
   border: 1px solid #fff;
 }
-
+.extraa
+{
+  padding-top: 35px!important;
+}
 .contact .info i {
   font-size: 48px;
   color: #9fb2d8;
