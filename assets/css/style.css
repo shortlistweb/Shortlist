@@ -172,13 +172,14 @@ h1, h2, h3, h4, h5, h6 {
   float:inherit;
   text-align:center;
 }
-.navbar .navbar-brand {
+.navbar a .navbar-brand {
   margin: 0;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 0px;
   font-weight: 700;
   letter-spacing: 2px;
   transition: .5s;
+  color: #000;
   
 }
 
@@ -248,11 +249,12 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991.98px) {   
   .navbar {
       padding: 5px!important;
-      background: var(--color) !important;
+      /* background: var(--color) !important; */
+      background-color: rgb(77, 13, 197)!important;
   }
   
   .navbar .navbar-brand {
-      color: white;
+      color: black!important;
   }
   
   .navbar .navbar-nav {
@@ -465,6 +467,16 @@ br{ display: none; }
 }
 @media all and (max-width: 700px) {
   .home .slogan{
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 538px) {
+  .home .slogan{
+    font-size: 1.5rem;
+  }
+}
+@media all and (max-width: 404px) {
+  .home .slogan{
     font-size: 1.25rem;
   }
 }
@@ -486,7 +498,7 @@ br{ display: none; }
 }
 .home .banner{
   color:#000  ;
-  font-size:3rem;
+  font-size:4rem;
   font-weight: bold;
   text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
 }
@@ -559,7 +571,7 @@ br{ display: none; }
 }
 
 .home .nut2{
-  bottom:23%; right: -13rem;
+  bottom:23%; right: -15rem;
   animation-direction: reverse;
 }
 
@@ -583,15 +595,42 @@ br{ display: none; }
   box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 498px) {
 .home .banner{
-  font-size: 2.5rem;
+  font-size: 3rem;
   }
 }
+@media (max-width: 375px) {
+  .home .banner{
+    font-size: 2.5rem;
+    }
+  }
+  @media (max-width: 281px) {
+    .home .banner{
+      font-size: 2rem;
+      }
+    }
 @media (max-width: 667px) 
 {
   .home .nut1, .home .nut2{
     display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 509px)
+{
+  .home .nut1, .home .nut2{
+    display: block;
+  }
+.home .fa-cog{
+  font-size:20rem;
+}
+  .home .nut1{
+    top:-20%; left: -10rem;
+  }
+  
+  .home .nut2{
+    bottom:-12%; right: -12rem;
+    animation-direction: reverse;
   }
 }
 
@@ -1011,7 +1050,7 @@ footer{
 @media (min-width: 1200px)
 {
   .team{
-  padding-left: 3rem!important; 
+  padding-left: 3.5rem!important; 
   }
 }
 .team{
