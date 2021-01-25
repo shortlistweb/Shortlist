@@ -1332,7 +1332,7 @@ hr{
 	}
 
 	.container1 .company-info h3, .container1 .company-info ul, .container1 .brand {
-		text-align: left;
+		text-align: center;
 	}
 }
 .contact input, .contact textarea{
