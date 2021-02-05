@@ -27,9 +27,10 @@ function submitForm(e) {
   var email = getInputVal('email');
   var message = getInputVal('message');
 
-  saveMessage(name, college, number, email, message);
+  saveMessage(name, number, college, email, message);
   var form = document.getElementById("contactForm");
   form.reset();
+  sendEmail(name, number, college, email, message);
   return clicked();
 
 }
@@ -38,7 +39,7 @@ function getInputVal(id) {
   return document.getElementById(id).value;
 }
 
-function saveMessage(name, number, email, message) {
+function saveMessage(name, number, college, email, message) {
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,
@@ -150,7 +151,7 @@ $('.testimonial-carousel').owlCarousel({
 })
 
 function clicked() {
-  return confirm('submitted');
+  return confirm('Submitted');
 }
 $('.nav a').click(function (e) {
   e.preventDefault();
@@ -159,3 +160,13 @@ $('.nav a').click(function (e) {
     scrollTop: ($scrooll_to_id.position().top - $('.nav-bar').height())
   });
 });
+
+function sendEmail(name, number, college, email, message) {
+  Email.send({
+    SecureToken: "c3e95a43-c968-478f-ba54-ee661b2152a0",
+    To: 'shortlistmail@gmail.com',
+    From: 'shortlistmail@gmail.com',
+    Subject: `${name} has applied`,
+    Body: `Name: ${name} <br/>Number: ${number} <br/>College: ${college} <br/>Email: ${email} <br/>Message: ${message}`
+  })
+}
