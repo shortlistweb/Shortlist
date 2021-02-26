@@ -31,8 +31,8 @@ function submitForm(e) {
   var form = document.getElementById("contactForm");
   form.reset();
   sendEmail(name, number, college, email, message);
-  return clicked();
-
+  window.location.href = 'https://www.payumoney.com/paybypayumoney/#/14DA048C47DF32F81CE636ADB6834580';
+  // return clicked();
 }
 
 function getInputVal(id) {
