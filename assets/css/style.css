@@ -1305,9 +1305,13 @@ hr{
 }
 
 .container1 .contact form button {
-	background: #6673e6;
+	background: #606cd8;
 	border: 0;
 	text-transform: uppercase;
+}
+.container1 .contact form button #subutton{
+	font-size: larger  !important;
+  font-weight: bolder!important;
 }
 
 .container1 .contact form button:hover, .contact form button:focus {
