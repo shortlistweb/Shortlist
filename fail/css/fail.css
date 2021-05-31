@@ -128,3 +128,11 @@ a {
 		padding:0 16px;
 	}
 }
+
+@media (max-width: 500px) {
+  .forms-25-info h3 {
+	color: #5607E9;
+	line-height: 145px;
+	font-size: 75px;
+}
+  }
