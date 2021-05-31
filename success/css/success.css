@@ -42,11 +42,7 @@ a {
     color: #232323;
     margin:20px 0px;
 }
-.copyright {
-	padding:40px 0px;
-	text-align: center;
-	color: #797979;
-}
+
 .forms-25-info h3 {
 	color: #5607E9;
 	line-height: 145px;
@@ -69,12 +65,10 @@ a {
 	margin-top: 20px;
 	display: inline-block;
 }
-.actionbg:hover {
+/* .actionbg:hover {
 	background: #fea44b;
 }
-.company {
-	color: #fea44b;
-}
+ */
 .column {
 	align-self: center;
 }
